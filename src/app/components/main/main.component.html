@@ -1,0 +1,29 @@
+<div class="main container">
+    <!-- <h2>Sidebar {{mainText}}</h2>
+    <input type="text" [(ngModel)]="mainText"> -->
+    <form class="example-form" [formGroup]="registrationForm" >
+      <mat-form-field class="example-full-width w-100">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field class="example-full-width w-100">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastName" >
+      </mat-form-field>
+      <mat-form-field class="example-full-width w-100">
+        <mat-label>Phone Number</mat-label>
+        <input matInput placeholder="Phone Number" formControlName="phoneNumber">
+      </mat-form-field>
+      <mat-form-field class="example-full-width w-100">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+     
+      <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Address" formControlName="address"></textarea>
+      </mat-form-field>
+      <button type="submit" class="btn btn-info" (click)="save()">Save</button>
+    </form>
+  </div>
+     
